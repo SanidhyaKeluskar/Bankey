@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layout_key_map"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@color/blue_dark90">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/key_maps_face"
+            android:layout_width="@dimen/map_key_image_height"
+            android:layout_height="@dimen/map_key_image_height"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/ic_no_photo"/>
+
+        <TextView
+            android:id="@+id/key_maps_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/map_key_text_size"
+            android:layout_toRightOf="@id/key_maps_face"
+            android:textColor="@color/black"
+            android:text="Fadi Abdalliah"/>
+
+        <TextView
+            android:id="@+id/key_maps_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/key_maps_name"
+            android:layout_toRightOf="@id/key_maps_face"
+            android:textSize="@dimen/map_key_text_size"
+            android:textColor="@color/black"
+            android:text="Service Charge 4.L.L"/>
+
+        <TextView
+            android:id="@+id/key_maps_distance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/key_maps_service"
+            android:layout_toRightOf="@id/key_maps_face"
+            android:textSize="@dimen/map_key_text_size"
+            android:textColor="@color/black"
+            android:text="3 min Away"/>
+
+        <ImageView
+            android:id="@+id/key_maps_distance_image"
+            android:layout_width="@dimen/map_key_text_size"
+            android:layout_height="@dimen/map_key_text_size"
+            android:layout_below="@id/key_maps_service"
+            android:layout_toRightOf="@id/key_maps_distance_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/map_key_text_size"
+            android:src="@drawable/icon_settings"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/key_maps_face"
+            android:layout_below="@id/key_maps_distance_time">
+
+            <TextView
+                android:id="@+id/key_maps_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/map_key_text_size"
+                android:textColor="@color/black"
+                android:text="@string/key_maps_rate"/>
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/key_maps_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                app:srb_starSize="@dimen/map_key_text_size"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                app:srb_stepSize="1"
+                app:srb_starBackgroundColor="@color/black"
+                app:srb_drawBorderEnabled="false"
+                app:srb_fillColor="@color/blue_green" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/key_maps_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/key_maps_arrow"
+            android:layout_marginRight="6dp"
+            android:textSize="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="@string/key_maps_detail"/>
+
+        <ImageView
+            android:id="@+id/key_maps_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow_white"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

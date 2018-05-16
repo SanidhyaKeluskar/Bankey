@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Bankey</string>
+    <string name="app_logo_text">Empowering People\'s Pockets</string>
+
+    <string name="cancel">إلغاء</string>
+    <string name="country">البلد</string>
+    <string name="phone_number">رقم الجوال</string>
+    <string name="next">التالي</string>
+    <string name="start">إبدأ</string>
+    <string name="terms_ans_conditions">الأحكام والشروط</string>
+    <string name="withdraw">سحب</string>
+    <string name="send">ارسل</string>
+    <string name="add">اضافة رصيد</string>
+    <string name="my_account">حسابي</string>
+    <string name="messages">الرسائل</string>
+    <string name="transactions">العمليات</string>
+    <string name="back">رجوع</string>
+    <string name="settings">إعدادات</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ok">تمام</string>
+    <string name="error">خطأ</string>
+    <string name="success">تمت العملية بنجاح</string>
+    <string name="warning">تحذير</string>
+    <string name="camera">كاميرا</string>
+    <string name="gallery">الصور</string>
+    <string name="welcome">أهلاً بك</string>
+    <string name="later">لاحقاً</string>
+    <string name="save">حفظ</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="progress_request_executing">Request Executing</string>
+    <string name="progress_please_wait">…الرجاء الانتظار</string>
+    <string name="unknown_server_error">Unknown server error</string>
+
+    <string name="facebook">فيسبوك</string>
+    <string name="twitter">تويتر</string>
+    <string name="whatsapp">واتساب</string>
+
+    <string name="share_text">Check BankeyApp. Mobile to Mobile money...Easy, Fast and Free!!!</string>
+
+    <string name="tutorial_signup_1_title">انشأ ملفك التعريفي الخاص بك</string>
+    <string name="tutorial_signup_1_subtitle">انشئ الملف التعريفي الخص بك و تحقق من رصيدك و جميع الانشطة الخاصة بك اينما كنت</string>
+    <string name="tutorial_signup_2_title">احصل على العملة الرقمية مقابل الكاش</string>
+    <string name="tutorial_signup_2_subtitle">حدد موقع مفتاح في منطقة لاسحب او الايداع</string>
+    <string name="tutorial_signup_3_title">تحويل عالمي، فوري و بكل حرية</string>
+    <string name="tutorial_signup_3_subtitle">بكل امان ارسل و استقبل أموال للاصدقاء و الاسرة من هاتفك النقال في اي وقت و الى اي مكان مجانا</string>
+    <string name="tutorial_signup_4_title">إستخدم بنكي للدفع بأي مكان</string>
+    <string name="tutorial_signup_4_subtitle">إستخدم تطبيق بنكي لدفع الفواتير والشراء عالانترنت بكل حرية</string>
+
+    <string name="tutorial_become_key_1_title">انشئ حساب لخدمة مفتاح</string>
+    <string name="tutorial_become_key_1_subtitle">للحصول على مفتاح، اربط رقم بطاقتك الإئتمانية بكل سهولة وحدد تسعيرة الخدمة</string>
+    <string name="tutorial_become_key_2_title">احصل على داخل إضافي</string>
+    <string name="tutorial_become_key_2_subtitle">Accept the request and schedule a meet-up directly by texting or calling the user</string>
+    <string name="tutorial_become_key_3_title">Help friends and family</string>
+    <string name="tutorial_become_key_3_subtitle">Receive notification request from unbanked users and decide which transaction you want to pursue</string>
+
+    <string name="login_sign_up_welcome">مرحباً بك مع بنكي</string>
+    <string name="login_sign_up_terms">بإدخال رقم الموبايل أوافق على الشروط والاحكام</string>
+
+    <string name="login_enter_code_title">أدخل الكود المؤلف من 6 أرقام</string>
+    <string name="login_enter_code_subtitle">قمنا بإرساله إلى الرقم</string>
+    <string name="login_enter_code_bottom">يمكنك إعادة إرسال الكود خلال</string>
+
+    <string name="login_passcode_create">انشئ الرمز السر الخاص بك</string>
+    <string name="login_passcode_reenter">قوم بإعادة إدخل الرمز السري للتأكيد</string>
+    <string name="login_passcode_forget_create">انشئ رمز سري جديد</string>
+
+    <string name="login_personal_details_title">معلوماتك الشخصيية</string>
+    <string name="login_personal_details_name_hint">الإسم الأول (كما هو بالبطاقة)</string>
+    <string name="login_personal_details_surname_hint">إسم العائلة (كما هو بالبطاقة)</string>
+    <string name="login_personal_details_birthday_hint">تاريخ الميلاد</string>
+    <string name="login_personal_details_email_hint">الايميل</string>
+
+    <string name="login_welcome_list_number"> %sرقمك في القائمة</string>
+    <string name="login_welcome_congratulation">مبروك، لقد حصلت على دعوة خاصة لتكون من اول مستخدمين تطبيق بنكي في لبنان</string>
+
+    <string name="login_enter_passcode">أدخل الرمز السري</string>
+    <string name="login_forget_passcode_dialog_title">نسيت الرمز السري؟</string>
+    <string name="login_forget_passcode_dialog_subtitle">هل أنت متأكد بأنك تريد إعادة إنشاء رمز سري؟</string>
+
+    <string name="account_my_balance">:الرصيد</string>
+
+    <string name="settings_edit_profile">تعديل الملف الشخصي</string>
+    <string name="settings_share_with_friends">خبر أصحابك</string>
+    <string name="settings_become_key">احصل على مفتاح</string>
+    <string name="settings_update_service_fee">تغيير تسعيرة الخدمه</string>
+    <string name="settings_turn_key_service_on">تشغيل خدمة المفتاح</string>
+    <string name="settings_turn_key_service_off">اقاف خدمة المفتاح</string>
+    <string name="settings_change_currency">تغيير العملة</string>
+    <string name="settings_gps">ال جي بي أس</string>
+    <string name="settings_link_bank">إربط بطاقتك الأئتمانية</string>
+    <string name="settings_tac">الأحكام والشروط</string>
+    <string name="settings_privacy_policy">سياسة الخصوصية</string>
+    <string name="settings_logout_title">تسجيل خروج</string>
+    <string name="settings_logout_desc">هل أنت متأكد بأنك تريد الخروج</string>
+
+    <string name="bank_account_title">رقم البطاقة</string>
+    <string name="bank_account_subtitle">اضافت رصيد بإستخدام البطاقة</string>
+    <string name="bank_account_card_number_hint">رقم البطاقة</string>
+    <string name="bank_account_card_number_cvv_hint">الرمز</string>
+    <string name="bank_account_card_number_date_hint">MM/YY</string>
+
+    <string name="input_email_title">الإميل الرئيسي</string>
+    <string name="input_email_subtitle">سنستخدمه فقط للتواصل معك</string>
+
+    <string name="input_address_title">عنوانك</string>
+    <string name="input_address_country">البلد</string>
+    <string name="input_address_line">العنوان</string>
+    <string name="input_address_city">المدينة</string>
+
+    <string name="service_fee_title">تغيير تسعيرة الخدمة</string>
+    <string name="service_fee_subtitle">تسعيرة الخدمة تتراوح ما بين 2% و 5%. يمكنك أيضاً تحديد حد أدنى للخدمة</string>
+    <string name="service_fee_minimum_amount">حد أدنى للخدمة</string>
+
+    <string name="dialog_add_balance_title">إضافة رصيد</string>
+    <string name="dialog_add_balance_description">ليس لديك رصيد كافي لتشغيل الخدمة. إنت بحاجة إلى $100 كرصيد أدنى لتفعيل الخدمة. هل تريد إضافة رصيد؟</string>
+
+    <!-- TODO Strings need to be confirmed !-->
+    <string name="wrong_passcode_confirmation">الرمز السري غير مطابق</string>
+    <string name="process_cancel_confirmation">إنت متأكد بأنك تريد إلغاء هذه العملية</string>
+
+    <string name="dialog_add_image_options">Add image options</string>
+    <string name="dialog_select_image_source">Please select image source</string>
+    <string name="dialog_empty_fields_error">الرجاء إدخل جميع البيانات المطلوبة</string>
+    <string name="dialog_wrong_phone_number">الرقم غير صحيح</string>
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <ImageView style="@style/HeaderArrowBack" />
+
+    <View style="@style/PageShadow"/>
+
+    <TextView style="@style/HeaderTitle"
+        android:id="@+id/service_fee_title"
+        android:layout_marginTop="40dp"
+        android:text="@string/service_fee_title"/>
+
+    <TextView
+        android:id="@+id/service_fee_subtitle"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/service_fee_title"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/service_fee_subtitle"/>
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/service_fee_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_dark"
+        android:textStyle="bold"
+        android:textSize="@dimen/service_fee_value_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/center"
+        android:text="0.00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_dark"
+        android:textSize="22dp"
+        android:text="%"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@id/center"
+        android:layout_toRightOf="@id/service_fee_value"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/service_fee_edit_height"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/service_fee_value"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@id/center">
+        
+        <ImageView
+            android:id="@+id/service_fee_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_triangle_up"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/service_fee_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_triangle_down"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"/>
+
+    <LinearLayout
+        android:id="@+id/service_fee_min_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/button_next">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/service_fee_min_1"
+                style="@style/ServiceFeeMinValue"
+                android:text="$1"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/service_fee_min_2"
+                style="@style/ServiceFeeMinValue"
+                android:text="$2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/service_fee_min_3"
+                style="@style/ServiceFeeMinValue"
+                android:text="$3"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/service_fee_min_4"
+                style="@style/ServiceFeeMinValue"
+                android:text="$4"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/service_fee_min_5"
+                style="@style/ServiceFeeMinValue"
+                android:text="$5"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/service_fee_min_container"-->
+        <!--android:textColor="@color/black"-->
+        <!--androsid:textSize="14dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="14dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="@string/service_fee_minimum_amount"/>-->
+
+
+</RelativeLayout>

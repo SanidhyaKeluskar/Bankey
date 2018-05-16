@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <View style="@style/PageShadow"/>
+
+    <RelativeLayout
+        android:id="@+id/select_key_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/header_back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="@dimen/button_next_icon_size"
+                android:layout_height="@dimen/button_next_icon_size"
+                android:src="@drawable/ic_back_green"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14dp"
+                android:textColor="@color/blue_green"
+                android:text="@string/back"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/blue_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/select_a_key"/>
+
+        <ImageView
+            android:id="@+id/settings_logout"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_settings"/>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_below="@id/select_key_header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/key_map_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/looking_for_keys_search_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/select_key_header"
+        android:background="@color/grey_light">
+
+        <ImageView
+            android:id="@+id/key_map_search_icon"
+            android:layout_width="@dimen/looking_for_keys_search_image_height"
+            android:layout_height="@dimen/looking_for_keys_search_image_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+        <EditText
+            android:id="@+id/key_map_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textSize="14dp"
+            android:hint="@string/enter_address_hint"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginLeft="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/key_map_my_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/looking_for_keys_search_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/select_key_header"
+        android:visibility="gone"
+        android:background="@color/grey_light">
+
+        <ProgressBar
+            android:layout_width="@dimen/map_key_progress_location"
+            android:layout_height="@dimen/map_key_progress_location"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:indeterminateTint="@color/blue_dark"
+            android:indeterminateTintMode="src_in"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/blue_dark"
+            android:textSize="16dp"
+            android:layout_marginLeft="14dp"
+            android:text="@string/map_determining_location"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/key_map_searching_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="@color/blue_light95">
+
+        <TextView
+            android:id="@+id/key_map_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="@string/looking_for_keys"/>
+
+        <ProgressBar
+            android:id="@+id/key_map_search_progress"
+            android:layout_width="@dimen/map_key_progress"
+            android:layout_height="@dimen/map_key_progress"
+            android:layout_below="@id/key_map_search_title"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_in"/>
+
+        <ImageView
+            android:layout_width="@dimen/looking_for_keys_image_width"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

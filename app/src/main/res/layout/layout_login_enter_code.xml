@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:clickable="true">
+
+    <View style="@style/PageShadow"/>
+
+    <ImageView
+        style="@style/LoginHeaderArrowBack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue_dark"
+        android:text="@string/login_enter_code_title"/>
+
+    <TextView
+        android:id="@+id/login_enter_code_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:text="@string/login_enter_code_subtitle"/>
+
+    <com.bankey.bankeyclient.view.VerificationCodeInput
+        android:id="@+id/login_enter_code_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/login_enter_code_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:text="@string/login_enter_code_bottom"/>
+
+
+</RelativeLayout>

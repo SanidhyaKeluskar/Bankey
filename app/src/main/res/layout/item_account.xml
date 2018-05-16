@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/account_recycler_item_height">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_account_image"
+        android:layout_width="@dimen/account_recycler_item_image_height"
+        android:layout_height="@dimen/account_recycler_item_image_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_no_photo"/>
+
+    <TextView
+        android:id="@+id/item_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/item_account_image"
+        android:text="Jamal Alssado"/>
+
+    <TextView
+        android:id="@+id/item_account_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/item_account_image"
+        android:layout_below="@id/item_account_name"
+        android:text="+961 126723129"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

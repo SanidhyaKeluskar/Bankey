@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <include layout="@layout/layout_account_header"/>
+
+    <TextView
+        android:id="@+id/account_my_balance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:text="@string/account_my_balance"
+        android:layout_below="@id/account_image"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_my_balance_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/blue_green"
+        android:textSize="@dimen/account_balance_text_size"
+        android:text="00.00" />
+
+    <TextView
+        android:id="@+id/account_currency_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="$"
+        android:layout_alignBottom="@id/account_balance"
+        android:layout_toRightOf="@id/account_balance"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/account_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/account_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/button_next_size"
+                android:layout_height="@dimen/button_next_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/round_button_account"
+                android:text="-"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:text="@string/withdraw"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="@dimen/button_next_size"
+                android:layout_height="@dimen/button_next_size"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/round_button_account"
+                android:text="S"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/send"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/button_next_size"
+                android:layout_height="@dimen/button_next_size"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/round_button_account"
+                android:text="+"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/add"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:layout_above="@id/account_bottom_panel"
+        android:orientation="horizontal"
+        android:background="@drawable/item_white"
+        android:elevation="2dp">
+
+        <View
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="@string/transactions"/>
+
+        <View
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_messages"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:layout_above="@id/account_transactions"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:background="@drawable/item_white"
+        android:elevation="2dp">
+
+        <View
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="@string/messages"/>
+
+        <View
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_key_request_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height_small"
+        android:layout_above="@id/account_messages"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:background="@drawable/item_white"
+        android:visibility="gone"
+        android:elevation="2dp">
+
+        <View
+            android:id="@+id/account_key_request_container_left"
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+        <TextView
+            android:id="@+id/account_key_request_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="@string/messages"/>
+
+        <View
+            android:id="@+id/account_key_request_container_right"
+            android:layout_width="@dimen/account_item_strip_width"
+            android:layout_height="match_parent"
+            android:background="@color/blue_green"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

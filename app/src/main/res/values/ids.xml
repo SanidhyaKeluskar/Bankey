@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="header_arrow_back" type="id"/>
+    <item name="page_shadow" type="id"/>
+
+</resources>

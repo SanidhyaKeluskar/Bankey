@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">Bankey</string>
+    <string name="app_logo_text">Empowering People\'s Pockets</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Phone number</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="terms_ans_conditions">Terms and Conditions</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="send">Send</string>
+    <string name="add">Add</string>
+    <string name="my_account">My Account</string>
+    <string name="messages">Messages</string>
+    <string name="transactions">Transactions</string>
+    <string name="back">Back</string>
+    <string name="settings">Settings</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="welcome">Welcome</string>
+    <string name="later">Later</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="progress_request_executing">Request Executing</string>
+    <string name="progress_please_wait">Please wait...</string>
+    <string name="unknown_server_error">Unknown server error</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_note">Add note</string>
+    <string name="service_charge">Service charge:</string>
+    <string name="accept">Accept</string>
+    <string name="accepted">Accepted</string>
+    <string name="pending">Pending</string>
+    <string name="confirmation_code">Confirmation code</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="whatsapp">WhatsApp</string>
+
+    <string name="share_text">Check BankeyApp. Mobile to Mobile money...Easy, Fast and Free!!!</string>
+
+    <string name="tutorial_signup_1_title">Create your Bankey Profile</string>
+    <string name="tutorial_signup_1_subtitle">Make your own financial profile and check your balance and all your activities on the go</string>
+    <string name="tutorial_signup_2_title">Get Paper Cash in\nExchange for Digit Cash</string>
+    <string name="tutorial_signup_2_subtitle">Locate a \"key\" in your area to withdraw or deposit cash in exchange of digital cash</string>
+    <string name="tutorial_signup_3_title">Transfer Money Around the\n Globe Instantly</string>
+    <string name="tutorial_signup_3_subtitle">Surely send and receive money anytime and anywhere for FREE</string>
+    <string name="tutorial_signup_4_title">Pay with Bankey Anywhere</string>
+    <string name="tutorial_signup_4_subtitle">Use Bankey to pay for your bills or to shop online or at stores</string>
+
+    <string name="tutorial_become_key_1_title">Create a Key profile</string>
+    <string name="tutorial_become_key_1_subtitle">To become a key, safely link your bank account to the Bankey app and set up your fee</string>
+    <string name="tutorial_become_key_2_title">Make extra money</string>
+    <string name="tutorial_become_key_2_subtitle">Accept the request and schedule a meet-up directly by texting or calling the user</string>
+    <string name="tutorial_become_key_3_title">Help friends and family</string>
+    <string name="tutorial_become_key_3_subtitle">Receive notification request from unbanked users and decide which transaction you want to pursue</string>
+
+    <string name="login_sign_up_welcome">Hi, Welcome to Bankey!</string>
+    <string name="login_sign_up_terms">By entering your phone number, you agree\nto our %s</string>
+
+    <string name="login_enter_code_title">Enter the 6-digit code</string>
+    <string name="login_enter_code_subtitle">We have sent it to %s</string>
+    <string name="login_enter_code_bottom">You can resend your code if it does not arrive in</string>
+
+    <string name="login_passcode_create">Create a Passcode for\nyour Bankey account</string>
+    <string name="login_passcode_reenter">Re-enter your passcode\nagain</string>
+    <string name="login_passcode_forget_create">Create a new passcode</string>
+
+    <string name="login_personal_details_title">Your personal details</string>
+    <string name="login_personal_details_name_hint">Leagal name</string>
+    <string name="login_personal_details_surname_hint">Leagal surname</string>
+    <string name="login_personal_details_birthday_hint">Date of birth</string>
+    <string name="login_personal_details_email_hint">Email Address</string>
+
+    <string name="login_welcome_list_number">You are number %s in the list...</string>
+    <string name="login_welcome_congratulation">Congratulation! You are going to be one of the first people to get early access to Bankey in Lebanon</string>
+
+    <string name="login_enter_passcode">Enter your passcode</string>
+    <string name="login_forget_passcode_dialog_title">Forget your passcode?</string>
+    <string name="login_forget_passcode_dialog_subtitle">Are you sure you want to reset your Bankey passcode?</string>
+
+    <string name="account_my_balance">My Balance:</string>
+
+    <string name="settings_edit_profile">Edit your profile</string>
+    <string name="settings_share_with_friends">Share with Friends</string>
+    <string name="settings_become_key">Become a Key</string>
+    <string name="settings_update_service_fee">Update Service Fee</string>
+    <string name="settings_turn_key_service_on">Turn Key service ON</string>
+    <string name="settings_turn_key_service_off">Turn Key service OFF</string>
+    <string name="settings_change_currency">Change Currency</string>
+    <string name="settings_gps">GPS</string>
+    <string name="settings_link_bank">Link your bank account</string>
+    <string name="settings_tac">Terms and Conditions</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_logout_title">Signing out</string>
+    <string name="settings_logout_desc">Are you sure you want to sign out from the Bankey app now?</string>
+
+    <string name="bank_account_title">Card number</string>
+    <string name="bank_account_subtitle">Add money using your debit card</string>
+    <string name="bank_account_card_number_hint">Debit card number...</string>
+    <string name="bank_account_card_number_cvv_hint">CVV</string>
+    <string name="bank_account_card_number_date_hint">MM/YY</string>
+
+    <string name="input_email_title">Your primary email</string>
+    <string name="input_email_subtitle">We will only use it to communicate change with you</string>
+
+    <string name="input_address_title">Your Address</string>
+    <string name="input_address_country">Country</string>
+    <string name="input_address_line">Address</string>
+    <string name="input_address_city">City</string>
+
+    <string name="service_fee_title">Update Service Fee</string>
+    <string name="service_fee_subtitle">Service fee various from 0.00 up to 3.00%\nYou can set up your minimum fee</string>
+    <string name="service_fee_minimum_amount">Minimum amount</string>
+
+    <string name="dialog_add_balance_title">Add Ballance</string>
+    <string name="dialog_add_balance_description">You do not have enough balance to activate Key service. You need minimum 100$ in your wallet. Do you want to add balance?</string>
+
+    <string name="wrong_passcode_confirmation">Entered passcodes are not equals!</string>
+    <string name="process_cancel_confirmation">Are you sure you want to finish curent process?</string>
+
+    <string name="dialog_add_image_options">Add image options</string>
+    <string name="dialog_select_image_source">Please select image source</string>
+    <string name="dialog_empty_fields_error">Please, fill all fields</string>
+    <string name="dialog_wrong_phone_number">Invalid phone number</string>
+
+    <!-- NOT TRANSLATED STRINGS !-->
+
+    <string name="dialog_money_select_method">Select method</string>
+    <string name="dialog_money_cash">Cash 3$</string>
+    <string name="dialog_money_bank">Bank 5$</string>
+
+    <string name="select_a_key">Select a Key</string>
+    <string name="looking_for_keys">Looking for Keys...</string>
+    <string name="enter_address_hint">Enter a name, place or street</string>
+
+    <string name="add_money">Add money</string>
+    <string name="withdraw_money">Withdraw money</string>
+    <string name="add_money_your_balance">Your Balance: %s</string>
+
+    <string name="key_rate_title">Bankey care about your opinion</string>
+    <string name="key_rate_subtitle">Please share %s as a Bankey Key</string>
+
+
+    <string name="key_details_rate">Rate:</string>
+    <string name="key_details_directions">Directions</string>
+    <string name="key_details_reviews">Reviews and comments</string>
+    <string name="key_details_contact">Contact %s</string>
+
+    <string name="key_maps_service">Service Charge</string>
+    <string name="key_maps_rate">Rate:</string>
+    <string name="key_maps_detail">View\nDetail</string>
+
+    <string name="key_request_confirmation_code_confirmation_code">Your confirmation code is</string>
+    <string name="key_request_confirmation_code_share_code">Share this code with the Key to add money to your balance</string>
+
+    <string name="key_request_confirm_request">Your are sending request to %s to exchange</string>
+    <string name="key_request_confirm_request_accepted">Your request was accepted by %s to exchange</string>
+
+    <string name="transaction_complete_transaction_completed">Transaction Completed</string>
+    <string name="transaction_complete_successfully_transaction">Your transaction is successfully completed.</string>
+    <string name="transaction_complete_amount_added">Amount added:</string>
+    <string name="transaction_complete_total_balance">Total balance:</string>
+    <string name="transaction_complete_transaction_reference">Your transaction reference</string>
+
+    <string name="transaction_pending_title">Your request to %s was sent for his confirmation</string>
+    <string name="transaction_pending_amount_added">Amount to be added:</string>
+    <string name="transaction_pending_amount_withdrawn">Amount to be withdrawn:</string>
+    <string name="transaction_pending_add_note">Add note..</string>
+
+    <string name="dialog_cancel_request">Cancel request</string>
+    <string name="dialog_cancel_request_desc">Are you sure you want to cancel this request</string>
+
+    <string name="account_key_request_add">request to add money from</string>
+    <string name="account_key_request_withdraw">request to withdraw money to</string>
+
+    <string name="map_determining_location">Determining current location...</string>
+    <string name="away">away</string>
+
+    <string name="dialog_enter_valid_amount">Please enter valid amount!</string>
+    <string name="dialog_not_enough_balance">Not enough balance!</string>
+
+    <string name="enter_name_email_phone_hint">Enter a name, email or mobile</string>
+    <string name="select">Select</string>
+    <string name="transaction_reference">Transaction Reference</string>
+    <string name="done">Done</string>
+
+    <string name="rate_later"><u>Rate later</u></string>
+    <string name="rate_and_review"><u>Rate &amp; Review</u></string>
+
+</resources>

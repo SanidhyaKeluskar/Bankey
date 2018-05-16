@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_white">
+
+    <LinearLayout
+        android:id="@+id/dialog_share_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_share_itme_size">
+
+        <ImageView
+            android:layout_width="@dimen/dialog_share_icon_size"
+            android:layout_height="@dimen/dialog_share_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/share_facebook"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_share_item_text"
+            android:text="@string/facebook"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_share_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_share_itme_size">
+
+        <ImageView
+            android:layout_width="@dimen/dialog_share_icon_size"
+            android:layout_height="@dimen/dialog_share_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/share_twitter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_share_item_text"
+            android:text="@string/twitter"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_share_whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_share_itme_size">
+
+        <ImageView
+            android:layout_width="@dimen/dialog_share_icon_size"
+            android:layout_height="@dimen/dialog_share_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/share_whatsapp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_share_item_text"
+            android:text="@string/whatsapp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

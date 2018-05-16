@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/dialog_share_facebook"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/select_country_item_size"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/item_white">
+
+    <ImageView
+        android:id="@+id/item_country_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/select_country_image_height"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/item_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="64dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/select_country_item_text"
+        android:text="Ukraine"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>

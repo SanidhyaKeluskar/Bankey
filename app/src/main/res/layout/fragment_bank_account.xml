@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <ImageView style="@style/HeaderArrowBack" />
+
+    <View style="@style/PageShadow"/>
+
+    <TextView style="@style/HeaderTitle"
+        android:id="@+id/bank_account_title"
+        android:layout_marginTop="40dp"
+        android:text="@string/bank_account_title"/>
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/bank_account_card_1_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bank_account_card_height"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/grey2"
+        android:layout_above="@id/center">
+
+        <com.bankey.bankeyclient.view.CreditCardEditText
+            android:id="@+id/bank_account_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/blue_dark"
+            android:textSize="20dp"
+            android:textColorHint="@color/grey"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="19"
+            android:hint="@string/bank_account_card_number_hint" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bank_account_card_2_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bank_account_card_height"
+        android:layout_above="@id/center"
+        android:background="@color/grey2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:visibility="invisible"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bank_account_card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/visa"/>
+
+        <com.bankey.bankeyclient.view.CreditCardDateEditText
+            android:id="@+id/bank_account_card_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bank_account_card_image"
+            android:textColor="@color/blue_dark"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="20dp"
+            android:textColorHint="@color/grey"
+            android:gravity="center"
+            android:digits="1234567890"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@id/bank_account_card_cvv"
+            android:inputType="number"
+            android:maxLength="5"
+            android:hint="@string/bank_account_card_number_date_hint"
+            android:layout_marginRight="18dp"/>
+
+        <EditText
+            android:id="@+id/bank_account_card_cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/bank_account_card_date"
+            android:textColor="@color/blue_dark"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="20dp"
+            android:textColorHint="@color/grey"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/bank_account_card_number_cvv_hint"
+            android:layout_marginRight="18dp"/>
+
+    </RelativeLayout>
+
+    <TextView style="@style/HeaderTitle"
+        android:layout_above="@id/bank_account_card_1_container"
+        android:layout_marginBottom="16dp"
+        android:text="@string/bank_account_subtitle"/>
+
+    <include layout="@layout/layout_button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"/>
+
+    <include layout="@layout/layout_login_enter_code"
+        android:id="@+id/bank_account_phone_code"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
