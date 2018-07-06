@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,12 +21,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bankey.bankeyclient.AnimationUtils;
+import com.bankey.bankeyclient.DialogUtils;
 import com.bankey.bankeyclient.R;
+import com.bankey.bankeyclient.api.data.PreCardRegistrationData;
 import com.bankey.bankeyclient.data.UserSession;
 import com.bankey.bankeyclient.model.BankAccountModel;
+import com.bankey.bankeyclient.tasks.AbstractBackgroundTask;
+import com.bankey.bankeyclient.tasks.PreRegistrationTask;
 import com.bankey.bankeyclient.view.CreditCardDateEditText;
 import com.bankey.bankeyclient.view.CreditCardEditText;
+import com.bankey.bankeyclient.tasks.PreRegistrationTask;
 import com.bankey.bankeyclient.view.PhoneCodePageBinder;
+import com.bankey.bankeyclient.model.FragmentModel;
+
 
 /**
  * Created by DLutskov on 3/23/2018.
@@ -41,6 +49,7 @@ public class BankAccountFragment extends AbstractFragment<BankAccountModel> {
 
     private View mButtonNext;
     private View mButtonBack;
+    public String currency="USD";
 
     private View mCard1View;
     private EditText mCardNumberInput;
@@ -49,6 +58,7 @@ public class BankAccountFragment extends AbstractFragment<BankAccountModel> {
     private ImageView mCardTypeImage;
     private EditText mCardExpireView;
     private EditText mCardCVVView;
+    private BankAccountModel model;
 
     private PhoneCodePageBinder mPhoneCodeBinder;
 
@@ -63,12 +73,18 @@ public class BankAccountFragment extends AbstractFragment<BankAccountModel> {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.fragment_bank_account, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        try{
+        model.onBankButtonPressed("USD");}
+        catch (Exception e){
+
+        }
 
         // Card 1
         mCard1View = view.findViewById(R.id.bank_account_card_1_container);
